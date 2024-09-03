@@ -29,7 +29,7 @@ HEIGHT=600
 window =pygame.display.set_mode((WIDTH,HEIGHT))
 clock = pygame.time.Clock()
 BLACK=(0,0,0)
-ORANGE=(255,165,0)
+BLUE=(137, 207, 240)
 RED=(255,0,0)
 CIRCLE_CENTER=np.array([WIDTH/2,HEIGHT/2],dtype=np.float64)
 CIRCLE_RADIUS=150
@@ -73,7 +73,7 @@ while running:
                 ball.v=2*proj_v_t-ball.v
                 ball.v+=t*spinning_speed # v = r*w
     window.fill(BLACK)
-    pygame.draw.circle(window,ORANGE,CIRCLE_CENTER,CIRCLE_RADIUS,3)
+    pygame.draw.circle(window,BLUE,CIRCLE_CENTER,CIRCLE_RADIUS,3)
     draw_arc(window,CIRCLE_CENTER, CIRCLE_RADIUS, start_angle, end_angle)
     for ball in balls:
         pygame.draw.circle(window,ball.color,ball.pos,BALL_RADIUS)
