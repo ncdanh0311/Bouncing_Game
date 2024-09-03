@@ -1,0 +1,15 @@
+{
+    "name": "Cong Danh",
+    "age": 22,
+    "grade": 12,
+    "social": [
+        {
+            "name": "Youtube",
+            "link": "youtube.com/ngocongdanh"
+        },
+        {
+            "name": "Facebook",
+            "link": "facebook.com/ngocongdanh"
+        }
+    ]
+}
